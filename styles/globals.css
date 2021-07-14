@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Mulish:wght@400;800&display=swap);
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(51, 51, 51, 1);
 }
 
 a {
@@ -11,6 +13,53 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: rgba(130, 130, 130, 1);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.container {
+  margin: 0 2rem;
+  max-width: 100%;
+}
+
+.error {
+  height: 50px;
+  outline: none;
+  width: 115px;
+  border: 1px solid rgba(241, 47, 47, 0.671);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin: 0 0.5rem;
+  }
 }

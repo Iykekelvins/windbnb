@@ -1,0 +1,194 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top button {
+  background: none;
+}
+
+.modal {
+  padding: 4rem;
+  font-family: "Mulish", sans-serif;
+  background: white;
+  height: auto;
+  width: 100%;
+  position: absolute;
+}
+
+.input_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.input {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: none;
+  font-family: inherit;
+  outline: none;
+  height: 50px;
+  width: 35%;
+  position: absolute;
+  top: 0;
+}
+
+.input:focus {
+  border: 1px solid black;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.input::placeholder {
+  position: absolute;
+  left: 0.5rem;
+  top: 1.5rem;
+}
+
+.input[type="text"] {
+  padding-top: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+.add,
+.block {
+  display: grid;
+}
+
+.add span,
+.block span {
+  font-weight: 800;
+  font-size: 0.7rem;
+  position: absolute;
+  top: 0;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.btn {
+  color: white;
+  background: rgba(241, 47, 47, 0.671);
+  border-radius: 4px;
+  height: 40px;
+  width: 100px;
+}
+
+.city_users {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.users_container {
+  position: "relative";
+  min-height: "180px";
+}
+
+.users {
+  position: absolute;
+  left: -2.5rem;
+}
+
+.users h4 {
+  margin-bottom: 0;
+}
+
+.users p {
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.counter button {
+  cursor: pointer;
+  background: none;
+  border: 1px solid rgba(51, 51, 51, 1);
+}
+
+.error {
+  height: 50px;
+  width: 350px;
+  border: 1px solid rgba(241, 47, 47, 0.671);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+@media screen and (min-width: 591px) {
+  .top {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .modal {
+    padding: 1rem;
+  }
+  .top {
+    visibility: visible;
+    height: auto;
+  }
+  .input_box {
+    height: auto;
+    display: block;
+    position: unset;
+    margin-bottom: 5rem;
+  }
+  .add span,
+  .block span {
+    top: unset;
+  }
+  .city_users {
+    margin-top: -4.5rem;
+    margin-bottom: 6rem;
+    grid-template-columns: unset;
+  }
+  .isLocation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .users {
+    position: unset !important;
+    margin-left: 0.8rem;
+  }
+  .input {
+    position: unset;
+    width: 100%;
+  }
+  .input:nth-child() {
+    border-bottom-color: rgb(230, 226, 226);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .btn {
+    position: absolute;
+    bottom: 1rem;
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+}
