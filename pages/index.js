@@ -136,7 +136,7 @@ export default function Home() {
         {places.map((place) => {
           const { superHost, title, type, rating, beds, photo, id } = place;
           return (
-            <article key={id}>
+            <article key={id} style={{ zIndex: "-1" }}>
               <Image
                 src={photo}
                 alt=""

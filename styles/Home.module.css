@@ -10,10 +10,6 @@
   grid-gap: 2rem;
 }
 
-.stays article {
-  z-index: -1;
-}
-
 .img {
   border-radius: 24px;
   width: 100%;
