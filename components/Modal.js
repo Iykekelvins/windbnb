@@ -102,7 +102,7 @@ const Modal = ({
 
   return (
     <Animated
-      animationIn="fadeInUpBig"
+      animationIn="fadeInDownBig"
       animationOut="fadeOutUpBig"
       animationInDuration={800}
       isVisible={isVisible}
