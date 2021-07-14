@@ -102,7 +102,7 @@ const Modal = ({
 
   return (
     <Animated
-      animationIn="fadeInDownBig"
+      animationIn="fadeInUpBig"
       animationOut="fadeOutUpBig"
       animationInDuration={800}
       isVisible={isVisible}
@@ -137,7 +137,7 @@ const Modal = ({
             </form>
             <button className={modalStyles.btn} onClick={checkFunction}>
               <i
-                class="fas fa-search"
+                className="fas fa-search"
                 style={{
                   marginRight: "0.5rem",
                 }}
