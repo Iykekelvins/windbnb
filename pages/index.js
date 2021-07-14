@@ -137,7 +137,13 @@ export default function Home() {
           const { superHost, title, type, rating, beds, photo, id } = place;
           return (
             <article key={id}>
-              <img src={photo} />
+              <Image
+                src={photo}
+                alt=""
+                height={350}
+                width={450}
+                className={homeStyles.img}
+              />
               <div className={homeStyles.article_info}>
                 {superHost ? (
                   <h4 className={homeStyles.host}>SUPER HOST</h4>

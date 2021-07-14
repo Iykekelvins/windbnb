@@ -164,7 +164,7 @@ const Modal = ({
                     return (
                       <h4 style={{ fontWeight: "500" }} key={index}>
                         <i
-                          class="fas fa-map-marker-alt"
+                          className="fas fa-map-marker-alt"
                           style={{ marginRight: "0.5rem", color: "black" }}
                         ></i>
                         {item}, Finland
